@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/* WEB全体に適用するスタイル */
+html,body {
+	width: 100%;
+    margin: 0 0;
+}
+
+* a {
+	text-decoration: none;
+}
+
+
+li {
+	list-style: none;
+}
+/* WEB全体に適用するスタイル */
+
+
+
+/* あとで消す */
+/* img {
+	background-color: lightgray;
+    width: 150px;
+} */
+/* あとで消す */
+
+
+.container {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	display: none;
+}
+
+/* ナビメニュー650pxまで　  */
+#nav-space {
+	display: none;
+}
+
+
+#menu-bar {
+	height: 100%;
+	width: 22%;
+	float: left;
+	background-color: rgba(211, 211, 211, 0.5);
+	position: fixed;
+}
+
+.menu-myName {
+	text-align: center;
+	margin: 50px 0px;
+	font-weight: normal;
+}
+
+.menu-listbox {
+    margin: 0 auto;
+    width: 100px;
+}
+
+.menu-link {
+	display: inline-block;
+}
+
+.menu-link h3 {
+	font-weight: normal;
+}
+
+.menu-bar-image {
+    display: block;
+	margin: 0 auto;
+	margin-top: 150px;
+	width: 60%;
+}
+
+/* メニューバー　501px以上の時に出現 500以下は消滅　 */
+
+
+
+/*  コンテンツ表示してる部分  */
+#main-content {
+	height: 100%;
+	width: 78%;
+	float: right;
+	background: rgb(245, 245, 245);
+	position: relative;
+}
+
+.content {
+	display: none;
+    height: 100%;
+    width: 90%;
+	margin: 0 auto -20px;
+    padding: 5% 0;
+    background-color: #fff;
+}
+
+/*  コンテンツ表示してる部分  */
+
+
+
+/*  各コンテンツの見出し */
+
+
+
+.head {
+	background-color: rgb(245, 245, 245);
+}
+
+.head h1 {
+	margin: 0px;
+	padding: 25px 0px;
+	font-weight: normal;
+}
+
+.heading {
+	text-align: center;
+}
+/*  各コンテンツの見出し */
+
+
+/*  ホーム */
+.heading {
+	display: none;
+}
+
+.home {
+	text-align: center;
+	position: relative;
+}
+
+.home img {
+}
+
+.home p {
+	position: absolute;
+	color: dimgrey;/*文字は白に*/
+	font-weight: bold; /*太字に*/
+	font-size: 2em;/*サイズ2倍*/
+	font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	top: 0;
+	left: 0;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	margin:0;
+	padding:0;
+}
+
+/*  ホーム */
+
+
+
+/*  プロフィール */
+.profile {
+	text-align: center;
+}
+.profile-content {
+	display: inline-block;
+	margin: 30px 0px;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    width: 85%;
+	height: inherit;
+	
+}
+
+.profile-content h2 {
+	margin: 23px 0;
+	font-weight: normal;
+}
+
+.profile-text {
+	margin: 5%;
+}
+
+.interest {
+    display: block;
+    font-size: 80%;
+    text-align: center;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    width: 80%;
+	height: 100%;
+	margin: 5% auto;
+	max-width: 330px
+}
+
+.interest-content {
+	margin-bottom: 30px;
+}
+
+.interest-p {
+    /* display: inline-block; */
+    /* width: 200px; */
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.small-card-image {
+	width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*  プロフィール */
+
+/*  クリエーテッド */
+
+
+.created h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.created-content {
+    display: inline-block;
+    width: 70%;
+    max-width: 300px;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+	margin: 2%;}
+	
+.created-content img {
+	width: 100%;
+	height: 210px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.created-content p {
+    padding: 5%;
+    margin: 0px;
+}
+
+footer {
+	height: 50px;
+	background: rgb(245, 245, 245);
+}
+
+/*  クリエーテッド end  */
+
+/*  ぶら下がるハートさん  */
+.hartsan {
+	text-align: center;
+}
+
+.hartsan img{
+	bottom: 0px;
+	right: 0px;
+	width: 170px;
+}
+/*  ぶら下がるハートさん end  */
+
+
+/*　　スマートフォン用　　*/
+@media screen and (max-width:650px){
+	/*　　ヘッダー　　*/
+	header {
+		display: block;
+	}
+
+	.myName {
+		text-align: center;
+	}
+	/*　　ナビメニュー　　*/
+	#nav-space {
+		display: block;
+		height: auto;
+		width: 100%;
+		background-color: darkgray;
+	}
+
+	.nav-menu {
+		text-align: center;
+	}
+	
+	.nav-menu ul {
+		height: inherit;
+		display: inline-block;
+		margin: 0 0;
+		padding: 0 0;
+	}
+	
+	.nav-menu li {
+		display: inline-block;
+	}
+	
+	.nav-menu a {
+		color: white;
+		font-weight: bolder;
+		padding: 12px 20px;
+	}
+
+	#main-content {
+		height: 100%;
+		width: 100%;
+		float: none;
+		background-color: rgb(245, 245, 245);
+	}
+
+	.content {
+		height: 100%;
+		width: 90%;
+		margin: 0 auto -3% auto;
+		background-color: #fff;
+	}
+
+	#menu-bar {
+		display: none;
+	}
+
+	/*  クリエーテッド */
+    .created {
+		text-align: center;
+	}
+
+	.created-content {
+		margin-top: 0px;
+		margin-left: 0px;
+		margin-bottom: 5%;
+	}
+	/*  クリエーテッド end  */
+  }
+/*　　スマートフォン用 end　　*/
